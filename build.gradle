@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+apply plugin: 'jacoco'
+
 group 'io.github.yasiekz'
 archivesBaseName = "event-sourcing-lib"
 version '1.0.0-SNAPSHOT'
@@ -22,4 +24,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = "0.8.2"
 }
