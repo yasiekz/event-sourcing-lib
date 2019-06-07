@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/yasiekz/event-sourcing-lib.svg?branch=master)](https://travis-ci.org/yasiekz/event-sourcing-lib.svg?branch=master)
+[![codecov](https://codecov.io/gh/yasiekz/event-sourcing-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/yasiekz/event-sourcing-lib)
 
 # Event sourcing lib
 
