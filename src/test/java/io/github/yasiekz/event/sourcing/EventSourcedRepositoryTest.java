@@ -1,6 +1,7 @@
 package io.github.yasiekz.event.sourcing;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 import io.github.yasiekz.event.sourcing.store.EventStore;
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.function.Executable;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -53,6 +55,20 @@ class EventSourcedRepositoryTest {
         // then
         assertEquals(NAME2, aggregate.getName());
         assertEquals(Status.DELETED, aggregate.getStatus());
+    }
+
+    @Test
+    @DisplayName("Should throw exception when no events found")
+    void testLoadWithNoEventsFound() {
+
+        // given
+        when(eventStore.load(ID)).thenThrow(EventsForAggregateNotFoundException.class);
+
+        // when
+        Executable executable = () -> repository.load(ID);
+
+        // then
+        assertThrows(EventSourcedAggregateNotFoundException.class, executable);
     }
 
     @Test
