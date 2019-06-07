@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'io.github.yasiekz'
+archivesBaseName = "event-sourcing-lib"
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.4.0'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.28.2'
+}
+
+test {
+    useJUnitPlatform()
+}
