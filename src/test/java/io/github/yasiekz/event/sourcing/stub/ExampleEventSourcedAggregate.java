@@ -10,7 +10,7 @@ public class ExampleEventSourcedAggregate extends EventSourcedAggregate<ExampleE
     private Status status;
     private String name;
 
-    private ExampleEventSourcedAggregate() {
+    public ExampleEventSourcedAggregate() {
 
     }
 
