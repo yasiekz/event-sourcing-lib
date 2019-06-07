@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yasiekz/event-sourcing-lib.svg?branch=master)](https://travis-ci.org/yasiekz/event-sourcing-lib.svg?branch=master)
+
 # Event sourcing lib
 
 ### Key features
