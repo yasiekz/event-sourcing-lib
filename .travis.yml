@@ -1,3 +1,5 @@
+before_install:
+  - mv gradle.properties.fake gradle.properties
 install: true
 language: java
 jdk:
