@@ -14,11 +14,25 @@ Probably you want to use this library with some sping 2.x. In such case you just
 
 ###### Add dependency with Maven:
 
-TBD
+```xml
+<dependency>
+  <groupId>io.github.yasiekz</groupId>
+  <artifactId>event-sourcing-lib</artifactId>
+  <version>1.0.1</version>
+</dependency>
+```
 
 ###### or with Gradle
 
-TBD
+```groovy
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.github.yasiekz:event-sourcing-lib:1.0.1'
+}
+```
 
 ###### Create some Event Store implementation
 
