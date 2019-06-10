@@ -14,6 +14,9 @@ public abstract class Event {
         this.createdAt = LocalDateTime.now();
     }
 
+    public Event() {
+    }
+
     public UUID getAggregateId() {
         return aggregateId;
     }
