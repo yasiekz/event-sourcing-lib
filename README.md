@@ -10,7 +10,7 @@
 - Show how to use it with very simple example
 
 ### How to use it
-Probably you want to use this library with some sping 2.x. In such case you just need to: 
+Probably you want to use this library with some spring 2.x. In such case you just need to: 
 
 ###### Add dependency with Maven:
 
@@ -18,7 +18,7 @@ Probably you want to use this library with some sping 2.x. In such case you just
 <dependency>
   <groupId>io.github.yasiekz</groupId>
   <artifactId>event-sourcing-lib</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.github.yasiekz:event-sourcing-lib:1.0.1'
+    implementation 'io.github.yasiekz:event-sourcing-lib:1.1.0'
 }
 ```
 
